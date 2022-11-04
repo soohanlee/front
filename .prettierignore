@@ -1,0 +1,9 @@
+.git/
+.gitignore
+.prettierignore
+.eslintignore
+
+/build/
+/src/assets/
+/src/serviceWorker.ts
+/src/reportWebVitals.ts

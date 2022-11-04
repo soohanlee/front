@@ -1,0 +1,8 @@
+node_modules/
+/config/
+/src/assets/
+/src/serviceWorker.ts
+/src/reportWebVitals.ts
+/scripts/
+/build/
+*.json
