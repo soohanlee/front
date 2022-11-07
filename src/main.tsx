@@ -5,7 +5,8 @@ import './index.css';
 import { RecoilRoot } from 'recoil';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from '@app/error-page';
-import Login from './pages/auth/Login';
+import { Login } from './pages/auth/Login';
+import { mockDataSet } from './helpers/fake-database';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,8 @@ const router = createBrowserRouter([
     element: <Login />,
   },
 ]);
+
+mockDataSet();
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

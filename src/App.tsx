@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useRecoilValue, useRecoilState } from 'recoil';
-import { todoListState } from '@app/recoil/todo-state';
+import { todoListState } from '@app/state/todo-state';
 import Header from './components/Header';
 
 const navigation = [
@@ -17,7 +17,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <div className="p-2 md:p-5">Hello world!</div>;
+      <div className="p-2 md:p-5">Hello world!</div>
     </div>
   );
 }
